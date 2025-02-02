@@ -89,7 +89,7 @@ eg. `du -sh /path/to/directory` lists all files and subdirectories within a dire
 `-n` - show line number where a match was found  
 
 ### Process Management
-A **daemon** is a background process in Linux (or Unix-like systems) that runs independently of user interaction and usually starts during system boot-up or when needed. Daemons are typically used to perform system-level tasks or provide services without user intervention.
+A **daemon** is a background process in Linux (or Unix-like systems) that runs independently of user interaction and usually starts during system boot-up or when needed. Daemons are typically used to perform system-level tasks or provide services without user intervention.  
 
 `kill <pid>` - kill a process specified by its id   
 `pkill <name>` - kill a process specified by its name  
