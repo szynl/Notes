@@ -112,3 +112,10 @@
 ### 11. What is port forwarding?
 - **Port Forwarding**: Allows you to forward traffic from your local machine to another server via an intermediary (usually an SSH tunnel).
 
+### 12. What is a MAC address and how is it used in networking?
+
+A **MAC address** (Media Access Control address) is a unique identifier assigned to a network interface card (NIC) for use in network communications at the Data Link Layer (Layer 2) of the OSI model.
+
+- **Format**: A MAC address is typically written as six pairs of hexadecimal digits (e.g., `00:14:22:01:23:45`).
+- **Purpose**: It ensures that devices on a local network can identify and communicate with each other directly.
+- **Usage**: MAC addresses are used by Ethernet and Wi-Fi networks to direct data frames to specific devices on the same physical network. 
