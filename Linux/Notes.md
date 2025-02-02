@@ -61,7 +61,7 @@ eg. `du -sh /path/to/directory` lists all files and subdirectories within a dire
 
 `rm <file>` - remove a file
 
-`ln -s <file> <symbolic link name>` - create a symbolic (reference type) link which acts as a shortcut by pointing to the path   
+`ln -s <file> <symbolic link name>` - create a symbolic/soft (reference type) link which acts as a shortcut by pointing to the path   
 `ln <file> <hard link name>` - create a hard (direct reference) link which effectively creates another name for the same file  
 
 ### Directory Manipulation
