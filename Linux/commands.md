@@ -119,8 +119,9 @@ eg. `0 2 * * * /path/to/script.sh` runs `script.sh` at 2AM every day
 `dig <domain>` - show DNS information of given domain  
 `dig -x <host>` - perform reverse lookup for host  
 
-`whois <domain>` - get information about a domain  
+`whois <domain>` - get information about a domain (e.g. whois google.com) 
 
+`ip a` - get all ip information
 `ip addr` - get ip address  
 `ping <ip>` - check ping between host and given ip  
 
@@ -129,4 +130,4 @@ eg. `0 2 * * * /path/to/script.sh` runs `script.sh` at 2AM every day
 `wget <file>` - download file   
 
 `traceroute <domain>` - trace route a packet takes when travelling from machine to host  
-`telnet <domain> <port>` - connect to remote host on specified port  
+`telnet <domain> <port>` - connect to remote host on specified port (not really used much anymore)
