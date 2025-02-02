@@ -1,8 +1,36 @@
-## Linux Commands
+## What is Linux?
+
+The Linux kernel is the core component of a Linux operating system, acting as the central hub that manages communication between the hardware and software, essentially controlling all essential functions of the OS, including memory allocation, process scheduling, file system access, and device management; it is considered the most critical part of the Linux system. 
+
+## Linux File System Directories
+
+- **`/`**: The root directory, the top-level directory in the file system hierarchy.
+- **`/bin`**: Contains essential system binaries (e.g., `ls`, `cp`, `cat`) for system operation.
+- **`/boot`**: Stores bootloader files, including the Linux kernel.
+- **`/dev`**: Holds device files that represent hardware devices (e.g., `/dev/sda` for a hard drive).
+- **`/etc`**: Contains system configuration files and settings.
+- **`/home`**: Stores user-specific data and configuration files for individual users.
+- **`/lib`**: Contains essential shared libraries and kernel modules needed by system binaries.
+- **`/media`**: Mount point for removable media (e.g., USB drives, CDs).
+- **`/mnt`**: Temporary mount point for mounting filesystems manually.
+- **`/opt`**: Holds optional software packages that are not part of the core distribution.
+- **`/proc`**: A virtual directory that provides system and process information in real-time.
+- **`/root`**: The home directory for the root (superuser) account.
+- **`/run`**: Stores runtime data and system information that changes during boot.
+- **`/sbin`**: Contains system binaries for system administration, usually requiring root access.
+- **`/srv`**: Holds data for services provided by the system (e.g., web server files).
+- **`/sys`**: A virtual filesystem providing information and configuration about the kernel and devices.
+- **`/tmp`**: Temporary files created by programs, often cleared on reboot.
+- **`/usr`**: Contains user-related programs and data, including libraries, binaries, and documentation.
+- **`/var`**: Stores variable data like logs, databases, and temporary application files.
+
+## Sudo
 
 `sudo` - **superuser do**: allows permitted user to run commands with elevated commands and perform administrative tasks with root access; system verifies user is in the **sudoers file** and cache the authorisation for a short time
-
 eg. `sudo apt update` updates all available packages
+
+`sudo useradd <username>` - add user `<username>`  
+`sudo passwd <username>` - add password for user `<username>`   
 
 ### Get Information
 `man <topic>` - display **user manual** for a command
@@ -15,8 +43,9 @@ eg. `man ls` to display detailed information about the `ls` command
 `du <directory>` - display **disk usage** of a directory and its subdirectories in kilobytes  
 `-s` - summarise total size of directories  
 `-h` - display sizes in human readable format  
-
 eg. `du -sh /path/to/directory` lists all files and subdirectories within a directory
+
+`df <directory>` - display **disk free** space of a directory and its subdirectories  
 
 ### File Manipulation
 `touch <file>` - create new file called `<file>` 
@@ -33,7 +62,7 @@ eg. `du -sh /path/to/directory` lists all files and subdirectories within a dire
 
 `rm <file>` - remove a file
 
-`ln -s <file> <symbolic link name>` - create a symbolic (reference type) link which acts as a shortcut by pointing to the path   
+`ln -s <file> <symbolic link name>` - create a symbolic/soft (reference type) link which acts as a shortcut by pointing to the path   
 `ln <file> <hard link name>` - create a hard (direct reference) link which effectively creates another name for the same file  
 
 ### Directory Manipulation
@@ -61,11 +90,15 @@ eg. `du -sh /path/to/directory` lists all files and subdirectories within a dire
 `-n` - show line number where a match was found  
 
 ### Process Management
+A **daemon** is a background process in Linux (or Unix-like systems) that runs independently of user interaction and usually starts during system boot-up or when needed. Daemons are typically used to perform system-level tasks or provide services without user intervention.  
+
 `kill <pid>` - kill a process specified by its id   
 `pkill <name>` - kill a process specified by its name  
 
-`ps aux` - list all running services  
-eg. `ps aux | grep <service>` to find all running services specifically named `<service>`  
+`ps aux` - list all running processes  
+eg. `ps aux | grep <process>` to find all running services specifically named `<process>`  
+
+`systemctl list services` lists all the active/inactive services (e.g. cron, ssh)
 
 `reboot` - restart system  
 `shutdown -h now` - shutdown system immediately  
@@ -117,8 +150,9 @@ eg. `0 2 * * * /path/to/script.sh` runs `script.sh` at 2AM every day
 `dig <domain>` - show DNS information of given domain  
 `dig -x <host>` - perform reverse lookup for host  
 
-`whois <domain>` - get information about a domain  
+`whois <domain>` - get information about a domain (e.g. whois google.com) 
 
+`ip a` - get all ip information
 `ip addr` - get ip address  
 `ping <ip>` - check ping between host and given ip  
 
@@ -127,4 +161,4 @@ eg. `0 2 * * * /path/to/script.sh` runs `script.sh` at 2AM every day
 `wget <file>` - download file   
 
 `traceroute <domain>` - trace route a packet takes when travelling from machine to host  
-`telnet <domain> <port>` - connect to remote host on specified port  
+`telnet <domain> <port>` - connect to remote host on specified port (not really used much anymore)
