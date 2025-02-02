@@ -64,8 +64,10 @@ eg. `du -sh /path/to/directory` lists all files and subdirectories within a dire
 `kill <pid>` - kill a process specified by its id   
 `pkill <name>` - kill a process specified by its name  
 
-`ps aux` - list all running services  
-eg. `ps aux | grep <service>` to find all running services specifically named `<service>`  
+`ps aux` - list all running processes  
+eg. `ps aux | grep <process>` to find all running services specifically named `<process>`  
+
+`systemctl list services` lists all the active/inactive services (e.g. cron, ssh)
 
 `reboot` - restart system  
 `shutdown -h now` - shutdown system immediately  
