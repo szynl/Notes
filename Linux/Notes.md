@@ -27,8 +27,10 @@ The Linux kernel is the core component of a Linux operating system, acting as th
 ## Linux Commands
 
 `sudo` - **superuser do**: allows permitted user to run commands with elevated commands and perform administrative tasks with root access; system verifies user is in the **sudoers file** and cache the authorisation for a short time
-
 eg. `sudo apt update` updates all available packages
+
+`sudo useradd <username>` - add user `<username>`  
+`sudo passwd <username>` - add password for user `<username>`   
 
 ### Get Information
 `man <topic>` - display **user manual** for a command
