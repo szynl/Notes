@@ -1,3 +1,29 @@
+## What is Linux?
+
+The Linux kernel is the core component of a Linux operating system, acting as the central hub that manages communication between the hardware and software, essentially controlling all essential functions of the OS, including memory allocation, process scheduling, file system access, and device management; it is considered the most critical part of the Linux system. 
+
+## Linux File System Directories
+
+- **`/`**: The root directory, the top-level directory in the file system hierarchy.
+- **`/bin`**: Contains essential system binaries (e.g., `ls`, `cp`, `cat`) for system operation.
+- **`/boot`**: Stores bootloader files, including the Linux kernel.
+- **`/dev`**: Holds device files that represent hardware devices (e.g., `/dev/sda` for a hard drive).
+- **`/etc`**: Contains system configuration files and settings.
+- **`/home`**: Stores user-specific data and configuration files for individual users.
+- **`/lib`**: Contains essential shared libraries and kernel modules needed by system binaries.
+- **`/media`**: Mount point for removable media (e.g., USB drives, CDs).
+- **`/mnt`**: Temporary mount point for mounting filesystems manually.
+- **`/opt`**: Holds optional software packages that are not part of the core distribution.
+- **`/proc`**: A virtual directory that provides system and process information in real-time.
+- **`/root`**: The home directory for the root (superuser) account.
+- **`/run`**: Stores runtime data and system information that changes during boot.
+- **`/sbin`**: Contains system binaries for system administration, usually requiring root access.
+- **`/srv`**: Holds data for services provided by the system (e.g., web server files).
+- **`/sys`**: A virtual filesystem providing information and configuration about the kernel and devices.
+- **`/tmp`**: Temporary files created by programs, often cleared on reboot.
+- **`/usr`**: Contains user-related programs and data, including libraries, binaries, and documentation.
+- **`/var`**: Stores variable data like logs, databases, and temporary application files.
+
 ## Linux Commands
 
 `sudo` - **superuser do**: allows permitted user to run commands with elevated commands and perform administrative tasks with root access; system verifies user is in the **sudoers file** and cache the authorisation for a short time
