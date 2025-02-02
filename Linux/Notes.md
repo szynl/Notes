@@ -43,8 +43,9 @@ eg. `man ls` to display detailed information about the `ls` command
 `du <directory>` - display **disk usage** of a directory and its subdirectories in kilobytes  
 `-s` - summarise total size of directories  
 `-h` - display sizes in human readable format  
-
 eg. `du -sh /path/to/directory` lists all files and subdirectories within a directory
+
+`df <directory>` - display **disk free** space of a directory and its subdirectories  
 
 ### File Manipulation
 `touch <file>` - create new file called `<file>` 
