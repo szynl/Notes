@@ -118,4 +118,17 @@ A **MAC address** (Media Access Control address) is a unique identifier assigned
 
 - **Format**: A MAC address is typically written as six pairs of hexadecimal digits (e.g., `00:14:22:01:23:45`).
 - **Purpose**: It ensures that devices on a local network can identify and communicate with each other directly.
-- **Usage**: MAC addresses are used by Ethernet and Wi-Fi networks to direct data frames to specific devices on the same physical network. 
+- **Usage**: MAC addresses are used by Ethernet and Wi-Fi networks to direct data frames to specific devices on the same physical network.
+  
+### 13. What are the most important QoS measures?
+
+- **Bandwidth**: The amount of data that can be transmitted in a given period, usually measured in bits per second (bps). Higher bandwidth ensures more data can be transferred simultaneously.
+- **Latency**: The time it takes for data to travel from the source to the destination. Lower latency is crucial for real-time applications like VoIP and online gaming.
+- **Jitter**: The variation in latency over time. High jitter can cause delays and issues in voice or video communication, making it essential to maintain stable latency.
+- **Packet Loss**: The percentage of packets lost during transmission. Packet loss can degrade performance, especially for real-time applications, and should be minimized.
+- **Throughput**: The actual rate of data transfer achieved over a network, accounting for factors like congestion, protocol overhead, and transmission errors.
+- **Error Rate**: The rate at which errors occur in data transmission. A low error rate ensures reliable communication and fewer retransmissions.
+- **Priority/Traffic Shaping**: The ability to prioritise certain types of traffic (e.g., VoIP, streaming) over others (e.g., file downloads) to ensure critical applications perform well under heavy load.
+
+### 14. What is FTP?
+- **FTP**: FTP (File Transfer Protocol) is a standard network protocol used for the transfer of files from one host to another over a TCP-based network, such as the Internet. FTP works by opening two connections that link the computers trying to communicate with each other.
