@@ -71,9 +71,9 @@
 
 ## Application Layer
 
-#### response for providing services to the end user
+#### Responsible for providing services to the end user
 
-
+----
 ### 1. Explain the difference between a hub, switch, and router.
 - **Hub**: A basic networking device that broadcasts data to all connected devices. It doesn’t filter traffic.
 - **Switch**: More intelligent than a hub, it forwards data only to the device it’s intended for, based on MAC addresses.
@@ -108,4 +108,7 @@
 ### 10. What is the difference between static and dynamic routing?
 - **Static Routing**: Fixed routes manually configured by the network administrator. It doesn’t adapt to network changes.
 - **Dynamic Routing**: Routes that automatically adjust based on network conditions, using protocols like OSPF or BGP to discover the best paths.
+
+### 11. What is port forwarding?
+- **Port Forwarding**: Allows you to forward traffic from your local machine to another server via an intermediary (usually an SSH tunnel).
 
