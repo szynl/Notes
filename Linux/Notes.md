@@ -24,7 +24,7 @@ The Linux kernel is the core component of a Linux operating system, acting as th
 - **`/usr`**: Contains user-related programs and data, including libraries, binaries, and documentation.
 - **`/var`**: Stores variable data like logs, databases, and temporary application files.
 
-## Linux Commands
+## Sudo
 
 `sudo` - **superuser do**: allows permitted user to run commands with elevated commands and perform administrative tasks with root access; system verifies user is in the **sudoers file** and cache the authorisation for a short time
 eg. `sudo apt update` updates all available packages
@@ -89,6 +89,8 @@ eg. `du -sh /path/to/directory` lists all files and subdirectories within a dire
 `-n` - show line number where a match was found  
 
 ### Process Management
+A **daemon** is a background process in Linux (or Unix-like systems) that runs independently of user interaction and usually starts during system boot-up or when needed. Daemons are typically used to perform system-level tasks or provide services without user intervention.
+
 `kill <pid>` - kill a process specified by its id   
 `pkill <name>` - kill a process specified by its name  
 
